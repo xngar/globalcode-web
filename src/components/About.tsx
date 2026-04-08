@@ -16,8 +16,13 @@ export default function About() {
           <h2 className="text-4xl md:text-5xl font-headline font-extrabold text-on-surface leading-tight">Nuestra misión es <span className="text-tertiary">esculpir</span> el futuro digital</h2>
           <div className="space-y-6">
             <p className="text-lg text-on-surface-variant leading-relaxed">
-              En SculptedAgency, no solo construimos sitios web; moldeamos experiencias que conectan emocionalmente con los usuarios. Nuestra filosofía se basa en la atención al detalle y la innovación constante.
+             19 años optimizando el aprendizaje corporativo
             </p>
+            <ul className="list-disc list-outside pl-6 space-y-2 text-lg text-on-surface-variant">
+              <li><strong className="text-on-surface font-semibold">Estrategia Integral:</strong> Desde el concepto hasta la ejecución operativa.</li>
+              <li><strong className="text-on-surface font-semibold">Eficiencia Real:</strong> Reducimos tus costos operativos con tecnología avanzada.</li>
+              <li><strong className="text-on-surface font-semibold">Sustentabilidad:</strong> Soluciones digitales amigables con el medio ambiente.</li>
+            </ul>
             <div className="grid grid-cols-2 gap-8 pt-4">
               <div>
                 <div className="text-3xl font-extrabold text-primary mb-2">150+</div>
