@@ -180,14 +180,14 @@ const TextType = ({
     <span className="inline" style={{ color: getCurrentTextColor() || 'inherit' }}>
       {displayedText}
     </span>,
-    showCursor && (
+    showCursor ? (
       <span
         ref={cursorRef}
         className={`ml-1 inline-block opacity-100 ${shouldHideCursor ? 'hidden' : ''} ${cursorClassName}`}
       >
         {cursorCharacter}
       </span>
-    )
+    ) : null
   );
 };
 

@@ -1,6 +1,5 @@
 'use client';
-
-import { useRef, useEffect, useState, ReactNode } from 'react';
+import { useRef, useEffect, useState, ReactNode, memo } from 'react';
 
 interface RevealProps {
   children: ReactNode;
@@ -8,7 +7,7 @@ interface RevealProps {
   className?: string;
 }
 
-export default function Reveal({ children, delay = 0, className = '' }: RevealProps) {
+function Reveal({ children, delay = 0, className = '' }: RevealProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -45,3 +44,5 @@ export default function Reveal({ children, delay = 0, className = '' }: RevealPr
     </div>
   );
 }
+
+export default memo(Reveal);

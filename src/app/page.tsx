@@ -1,8 +1,10 @@
+import dynamic from 'next/dynamic';
 import Hero from '../components/Hero';
-import About from '../components/About';
-import Services from '../components/Services';
-import ContactForm from '../components/ContactForm';
 import Reveal from '../components/Reveal';
+
+const About = dynamic(() => import('../components/About'));
+const Services = dynamic(() => import('../components/Services'));
+const ContactForm = dynamic(() => import('../components/ContactForm'));
 
 export default function Home() {
   return (
