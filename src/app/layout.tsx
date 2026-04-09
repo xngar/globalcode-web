@@ -14,11 +14,33 @@ export const metadata: Metadata = {
     default: "SculptedAgency | Agencia de Diseño Web y Estrategia Digital",
     template: "%s | SculptedAgency"
   },
-  description: "Agencia boutique especializada en diseño de productos digitales, desarrollo web de alta precisión y branding estratégico. Transformamos ideas en experiencias memorables.",
+  description: "Especialistas en diseño de productos digitales, desarrollo web de alta precisión y branding. Transformamos ideas en experiencias memorables.",
   alternates: {
     canonical: '/',
   },
   keywords: ["agencia digital", "diseño web", "productos digitales", "branding", "desarrollo web", "UX/UI"],
+  openGraph: {
+    title: "SculptedAgency | Agencia de Diseño Web y Estrategia Digital",
+    description: "Diseño de productos digitales y desarrollo web de alta precisión.",
+    url: "https://sculpted.agency",
+    siteName: "SculptedAgency",
+    locale: "es_ES",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "SculptedAgency Digital Excellence",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SculptedAgency | Agencia de Diseño Web y Estrategia Digital",
+    description: "Diseño de productos digitales y desarrollo web de alta precisión.",
+    images: ["/og-image.jpg"],
+  },
 };
 
 export default function RootLayout({
