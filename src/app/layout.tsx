@@ -9,8 +9,16 @@ const inter = Inter({ subsets: ["latin"], display: 'swap', variable: '--font-int
 const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"], display: 'swap', variable: '--font-jakarta' });
 
 export const metadata: Metadata = {
-  title: "SculptedAgency | Diseñamos Productos Digitales Excepcionales",
-  description: "Transformamos ideas audaces en experiencias digitales memorables.",
+  metadataBase: new URL('https://sculpted.agency'),
+  title: {
+    default: "SculptedAgency | Agencia de Diseño Web y Estrategia Digital",
+    template: "%s | SculptedAgency"
+  },
+  description: "Agencia boutique especializada en diseño de productos digitales, desarrollo web de alta precisión y branding estratégico. Transformamos ideas en experiencias memorables.",
+  alternates: {
+    canonical: '/',
+  },
+  keywords: ["agencia digital", "diseño web", "productos digitales", "branding", "desarrollo web", "UX/UI"],
 };
 
 export default function RootLayout({
@@ -18,10 +26,27 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "SculptedAgency",
+    "url": "https://sculpted.agency",
+    "logo": "https://sculpted.agency/logo.png",
+    "description": "Agencia boutique especializada en diseño de productos digitales y estrategia.",
+    "sameAs": [
+      "https://linkedin.com/company/sculptedagency",
+      "https://instagram.com/sculptedagency"
+    ]
+  };
+
   return (
     <html lang="es" className={`${inter.variable} ${jakarta.variable}`}>
       <head>
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
       <body className="bg-surface font-body text-on-surface antialiased">
         <TopNavBar />
