@@ -34,6 +34,7 @@ export default function Hero() {
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-3YcL_b6rKA5lrUwxpBGZZIHhlEglAGPUMQ9na3eR68u9hDCbX7xA1FymC2oBX_eCD805DUlLKJp5baChDdBeW3Pkuq11Zrx9tIEkIlzGlaBWIWEYDE2xsnRYDVTMGDQTxnPM-17nY8O0XVtze57CwYH2gM4d67MCe7fa8nqgABj3exbo1zqetH2U4qDECUjps93BLtgCbCi_ke1AKthux4gOHFZzyWNEezgZtlDTXD--7Do_BpsQI5zp90WvMCo4Tz5tGY0wXCQ" 
             fill
             priority
+            sizes="(max-width: 768px) 100vw, 50vw"
           />
         </div>
       </div>

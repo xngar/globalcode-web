@@ -6,7 +6,7 @@ const WhatsAppButton = () => {
       href="https://wa.me/" // Reemplaza con tu número ej: https://wa.me/1234567890
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-16 h-16 bg-[#25D366] text-white rounded-full shadow-[0_10px_30px_rgba(37,211,102,0.4)] hover:scale-110 hover:shadow-[0_15px_40px_rgba(37,211,102,0.6)] transition-all duration-300 group hover:-translate-y-2 animate-bounce hover:animate-none"
+      className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-16 h-16 bg-[#25D366] text-white rounded-full shadow-[0_10px_30px_rgba(37,211,102,0.4)] hover:scale-110 hover:shadow-[0_15px_40px_rgba(37,211,102,0.6)] hover:-translate-y-1 transition-all duration-300 will-change-transform"
       aria-label="Contactar por WhatsApp"
     >
       <svg

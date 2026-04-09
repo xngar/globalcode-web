@@ -4,9 +4,10 @@ import "./globals.css";
 import TopNavBar from '../components/TopNavBar';
 import Footer from '../components/Footer';
 import WhatsAppButton from '../components/WhatsAppButton';
+import FontLoader from '../components/FontLoader';
 
-const inter = Inter({ subsets: ["latin"], display: 'swap', variable: '--font-inter' });
-const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"], display: 'swap', variable: '--font-jakarta' });
+const inter = Inter({ subsets: ["latin"], display: 'swap', variable: '--font-inter', preload: true });
+const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"], display: 'swap', variable: '--font-jakarta', preload: true });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://sculpted.agency'),
@@ -64,7 +65,9 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${inter.variable} ${jakarta.variable}`}>
       <head>
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+        {/* Preconnect to Google Fonts for faster DNS/TLS — non-blocking */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -75,6 +78,8 @@ export default function RootLayout({
         {children}
         <Footer />
         <WhatsAppButton />
+        {/* Loads Material Symbols asynchronously post-render — avoids render-blocking */}
+        <FontLoader />
       </body>
     </html>
   );

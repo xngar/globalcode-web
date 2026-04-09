@@ -11,6 +11,7 @@ export default function About() {
             className="w-full max-w-md mx-auto clay-shadow rounded-xl inset-0 object-cover" 
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuCypWzLsSFELXtX_n4EEpbgpxLP_FZIJRSwppX-OJ080VLJBt50TayjoHsix_h-mGXM4eOjGyQX40NeRxc_M8nx6Eod24mVy8K7EO0LZ4gDC3hKfw9v-fqnfaUXfg9u53BGtEmu9JJqHrT1kyl3uCnYnzzqQlVBCpNF9_XGzbQEdZLYl4hEOr7_iTpXvhxADroZ1MR5VpMuBUORtEAymkDTC0KEo8UbCyy4TI4avt89B8xG1A1dgecNmZ0uKNGmxJ9VH4ul0Oog6Rs" 
             fill
+            sizes="(max-width: 768px) 100vw, 50vw"
           />
         </div>
         <div className="order-1 lg:order-2 space-y-8">
