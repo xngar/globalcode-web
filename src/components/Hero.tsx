@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import TextType from './TextType';
 
 export default function Hero() {
   return (
@@ -9,7 +10,7 @@ export default function Hero() {
           Estrategia Digital de Vanguardia
         </div>
         <h1 className="text-5xl md:text-7xl font-headline font-extrabold text-on-surface leading-[1.1] tracking-tight">
-          Diseñamos <span className="text-primary">Productos Digitales</span> Excepcionales
+          Diseñamos <TextType text="Productos Digitales" as="span" className="text-primary font-extrabold" loop={true} /> Excepcionales
         </h1>
         <p className="text-xl text-on-surface-variant max-w-xl leading-relaxed">
           Transformamos ideas audaces en experiencias digitales memorables mediante diseño centrado en el usuario y desarrollo de alta precisión.

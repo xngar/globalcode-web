@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import CountUp from './CountUp';
 
 export default function About() {
   return (
@@ -25,11 +26,15 @@ export default function About() {
             </ul>
             <div className="grid grid-cols-2 gap-8 pt-4">
               <div>
-                <div className="text-3xl font-extrabold text-primary mb-2">150+</div>
+                <div className="text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary mb-2">
+                  <CountUp to={150} direction="up" duration={2} className="inline-block" />+
+                </div>
                 <div className="text-sm font-bold uppercase tracking-wider text-outline">Proyectos Exitosos</div>
               </div>
               <div>
-                <div className="text-3xl font-extrabold text-tertiary mb-2">10+</div>
+                <div className="text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-tertiary to-primary mb-2">
+                  <CountUp to={10} direction="up" duration={2} delay={0.5} className="inline-block" />+
+                </div>
                 <div className="text-sm font-bold uppercase tracking-wider text-outline">Años de Experiencia</div>
               </div>
             </div>

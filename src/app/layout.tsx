@@ -3,6 +3,7 @@ import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import TopNavBar from '../components/TopNavBar';
 import Footer from '../components/Footer';
+import WhatsAppButton from '../components/WhatsAppButton';
 
 const inter = Inter({ subsets: ["latin"], display: 'swap', variable: '--font-inter' });
 const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"], display: 'swap', variable: '--font-jakarta' });
@@ -26,6 +27,7 @@ export default function RootLayout({
         <TopNavBar />
         {children}
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );
