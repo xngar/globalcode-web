@@ -35,9 +35,10 @@ function Reveal({ children, delay = 0, className = '' }: RevealProps) {
       className={className}
       style={{
         opacity: isVisible ? 1 : 0,
-        transform: isVisible ? 'translateY(0px)' : 'translateY(40px)',
-        transition: `opacity 0.7s ease ${delay}s, transform 0.7s cubic-bezier(0.16, 1, 0.3, 1) ${delay}s`,
-        willChange: 'opacity, transform',
+        transform: isVisible ? 'translateY(0px)' : 'translateY(48px)',
+        filter: isVisible ? 'blur(0px)' : 'blur(8px)',
+        transition: `opacity 0.8s ease ${delay}s, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1) ${delay}s, filter 0.8s ease ${delay}s`,
+        willChange: 'opacity, transform, filter',
       }}
     >
       {children}
