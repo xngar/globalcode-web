@@ -20,7 +20,10 @@ export default function Home() {
         <Reveal delay={0.1}>
           <Services />
         </Reveal>
-       
+
+        <Reveal delay={0.1}>
+          <Process />
+        </Reveal>
 
         <Reveal delay={0.1}>
           <ContactForm />
