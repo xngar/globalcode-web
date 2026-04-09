@@ -19,14 +19,6 @@ export default function Home() {
         <Reveal delay={0.1}>
           <Services />
         </Reveal>
-<<<<<<< HEAD
-
-        <Reveal delay={0.1}>
-          <Process />
-        </Reveal>
-
-=======
->>>>>>> parent of 45dac73 (feat: implement landing page components including Hero, About, Services, and interactive text typing effects.)
         <Reveal delay={0.1}>
           <ContactForm />
         </Reveal>
