@@ -1,0 +1,5 @@
+{
+    "git.ai.commitMessageLanguage": "es",
+    "github.copilot.git.commitMessageLanguage": "spanish",
+    "conventionalCommits.language": "es"
+}
