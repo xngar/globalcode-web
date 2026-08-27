@@ -15,21 +15,21 @@ const images: GalleryImage[] = [
     alt: "Modelo 3D de camión minero con componentes descompuestos",
   },
   {
-    src: "/002.webp",
-    alt: "Infografía técnica del proceso de molienda y flotación minera",
+    src: "/patio.webp",
+    alt: "Vista de un patio industrial",
   },
   {
-    src: "/003.webp",
-    alt: "Infografía 3D de un sistema minero integrado de cobre",
+    src: "/seguridad.webp",
+    alt: "Elementos de seguridad industrial",
   },
-  { src: "/004.webp", alt: "Diagrama 3D de una planta minera a cielo abierto" },
+  { src: "/tdent.webp", alt: "Ilustración técnica de TDent" },
   {
-    src: "/005.webp",
-    alt: "Infografía técnica de un horno alto y su flujo de proceso",
+    src: "/trabajo-caliente.webp",
+    alt: "Trabajo en caliente con medidas de seguridad",
   },
   {
-    src: "/006.webp",
-    alt: "Vista 3D descompuesta de un equipo triturador industrial",
+    src: "/mitos.webp",
+    alt: "Mitos",
   },
   {
     src: "/007.webp",
@@ -281,7 +281,11 @@ export default function BentoGallery() {
                       ? "(max-width: 768px) 100vw, 50vw" // 2×1 — ocupa la mitad del grid
                       : "(max-width: 768px) 100vw, 25vw" // 1×1 — ocupa un cuarto del grid
                 }
-                className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+                className={`object-cover transition-transform duration-500 ease-out ${
+                  idx === 1
+                    ? "scale-[1.2] group-hover:scale-[1.25]"
+                    : "group-hover:scale-105"
+                }`}
                 loading={idx === 0 ? "eager" : "lazy"}
               />
 
