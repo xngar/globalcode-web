@@ -11,8 +11,8 @@ interface GalleryImage {
 
 const images: GalleryImage[] = [
   {
-    src: "/001.webp",
-    alt: "Modelo 3D de camión minero con componentes descompuestos",
+    src: "/camion.webp",
+    alt: "Modelo 3D de camión minero ",
   },
   {
     src: "/patio.webp",
@@ -22,18 +22,18 @@ const images: GalleryImage[] = [
     src: "/seguridad.webp",
     alt: "Elementos de seguridad industrial",
   },
-  { src: "/tdent.webp", alt: "Ilustración técnica de TDent" },
+  { src: "/tdent.webp", alt: "Desarrollo web para Clínica Tdent" },
   {
     src: "/trabajo-caliente.webp",
     alt: "Trabajo en caliente con medidas de seguridad",
   },
   {
     src: "/mitos.webp",
-    alt: "Mitos",
+    alt: "Desarrollo de logo para Mitos",
   },
   {
-    src: "/007.webp",
-    alt: "Infografía técnica de despiece de una caldera pirotubular",
+    src: "/harnero.webp",
+    alt: "Desarrollo 3D de un harnero",
   },
 ];
 
